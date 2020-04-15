@@ -1,7 +1,7 @@
 ---
-- name: Hello world
-  hosts: linux
-  
+- name: Hello World!
+  hosts: all
+
   tasks:
-    - name: run echo command
-      command: /bin/echo hello world
+  - name: Hello World!
+    shell: echo "Hi! Tower is working!"
