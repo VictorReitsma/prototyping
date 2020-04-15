@@ -1,7 +1,7 @@
 ---
 - name: Hellow world echo
   hosts: linux
-  sudo: yes
+  become: yes
   
   tasks:
   - name: install_apache2
