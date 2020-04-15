@@ -1,4 +1,12 @@
 ---
-- hosts: all
+- name: Ping
+  hosts: linux
+
   tasks:
-    - ping:
+    - name: ping linux
+    ping:
+    register: ping_results
+    
+    - name: report results ping
+      debug:
+        var: ping_results
