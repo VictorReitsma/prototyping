@@ -4,8 +4,8 @@
 
   tasks:
     - name: ping linux
-    ping:
-    register: ping_results
+      ping:
+      register: ping_results
     
     - name: report results ping
       debug:
