@@ -1,9 +1,9 @@
 ---
 - name: Ping
-  hosts: linux
+  hosts: all
 
   tasks:
-    - name: ping linux
+    - name: ping hosts
       ping:
       register: ping_results
     
