@@ -1,8 +1,0 @@
----
-- name: Hellow world echo
-  hosts: linux
-  become: yes
-  
-  tasks:
-  - name: install_apache2
-  apt: name=apache2 update_cache=yes state=latest
