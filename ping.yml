@@ -10,3 +10,4 @@
     - name: report results ping
       debug:
         var: ping_results
+...
