@@ -1,0 +1,13 @@
+---
+- name: Ping
+  hosts: lnx_victor.finance.lab
+
+  tasks:
+    - name: ping lnx_victor
+      ping:
+      register: ping_results
+    
+    - name: report results ping
+      debug:
+        var: ping_results
+...
