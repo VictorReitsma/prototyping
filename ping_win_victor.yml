@@ -1,0 +1,12 @@
+---
+- name: Ping
+  hosts: win_victor.finance.lab
+
+  tasks:
+    - name: ping win_victor
+      ping:
+      register: ping_results
+    
+    - name: report results ping
+      debug:
+        var: ping_results
