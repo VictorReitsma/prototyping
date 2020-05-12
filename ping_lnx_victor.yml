@@ -1,6 +1,6 @@
 ---
 - name: Ping
-  hosts: lnx_victor.finance.lab
+  hosts: linux
 
   tasks:
     - name: ping lnx_victor
